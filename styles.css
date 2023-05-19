@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+.nav-items > ul{
+    list-style-type: none;
+    display: flex;
+}
+.nav-items > ul > li {
+    padding: 10px;
+}
+.logo {
+    width: 100px;
+}
+img.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+.card{
+    width: 180px;
+    border: 1px solid rgb(218, 214, 214);
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+.meta-data {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+.meta-data h4 {
+    font-size: 11px;
+}
+.card > img {
+    width: 100%;
+}
+.card > h3{
+    color: rgb(77, 75, 75);
+    text-transform: uppercase;
+}
+.card > h4{
+    font-weight: 400;
+    font-size: 14px;
+}
+.rating{
+    background-color: #48c479;
+    color: #fff;
+    width: 40px;
+}
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cuisinesNameList{
+    display: flex;
+    word-break: break-all;
+}
+.placeholder{
+    background-color: rgba(64, 53, 78, 0.1);
+    width: 220px;
+    height: 240px;
+}
+.grid__meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.grid__meta .title {
+    background-color: #F9F9FB;
+    height: 16px;
+    width: 96px;
+}
+.grid__meta .price {
+    background-color: #F9F9FB;
+    height: 16px;
+    width: 48px;
+    text-align: right;
+}
+.loading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+.blink {
+    animation: blink-animation 0.90s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.90s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
