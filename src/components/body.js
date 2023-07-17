@@ -60,6 +60,8 @@ const Body = () => {
         </button>
       </div>
 
+      
+      <div className="rest-count"><ul>{ document.getElementsByClassName('card').length} restaurants </ul> <ul> <li>Relavance</li><li>Delivery Time </li><li>Rating</li><li>Cost: Low to High</li><li>Filters </li></ul> </div>
       <div className="restaurant-list">
           { filteredRestaurants.map((restaurant)=>{
               return <RestaurantCard {...restaurant.data} key = {restaurant.data.id}/>
