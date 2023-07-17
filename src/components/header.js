@@ -13,6 +13,7 @@
 const Header = () => {
     return (
       <div className="header">
+        <div className="contain">
         <Title />
         <div className="nav-items">
           <ul>
@@ -22,9 +23,14 @@ const Header = () => {
             <Link to="/about">
               <li>About</li>
             </Link>
+            <Link to="/">
             <li>Contact</li>
+            </Link>
+            <Link to="/">
             <li>Cart</li>
+            </Link>
           </ul>
+        </div>
         </div>
       </div>
     );
